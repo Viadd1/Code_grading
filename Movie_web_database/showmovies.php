@@ -4,15 +4,6 @@
     <h1>Movie Database</h1>
     <h4>Below is a list of all movies that have been entered in the database up until this moment</h4>
 
-<search>
-<form>
-    <input name="Movie name" id="Movie name" placeholder="Search Movies">
-</form>
-  <br>
-</search>
-    <input type="submit"><br>
-    <br>
-
 <!-- Below we make the design of the table:
     100% means that it covers the entire screen
     Padding 2px is the space between the cell edges and the cell content
@@ -34,16 +25,26 @@ tr:nth-child(even) {
 }
 </style>
 
+<search>
+<form action="/searchmovies.php">
+    <input name="Movie name" id="Movie name" placeholder="Search Movies">
+</form>
+  <br>
+</search>
+    <input type="submit"><br>
+    <br>
 <!-- Below we create the table:
     echo the table with each heading
     we select all in the database under movies
     then we echo what exists in the database in the table created -->
 
+    
 <?php
 
 include 'db.php';
 
 echo '<table><tr><th>Movie name</th><th>Name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
+
 
 $sql = "SELECT * FROM `movies`";
 $result = $link->query($sql);
