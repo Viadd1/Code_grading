@@ -1,4 +1,6 @@
 <?php
+header("All movies in the database")
+
 include 'db.php';
 
 echo '<table><tr><th>mid</th><th>mname</th><th>myear</th><th>mgenreid</th><th>mrating</th></tr>';
