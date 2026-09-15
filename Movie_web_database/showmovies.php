@@ -43,7 +43,7 @@ tr:nth-child(even) {
 
 include 'db.php';
 
-echo '<table><tr><th>Movie name</th><th>Name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
+echo '<table><tr><th>ID</th><th>Movie name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
 
 
 $sql = "SELECT * FROM `movies`";
