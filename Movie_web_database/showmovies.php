@@ -4,10 +4,20 @@
     <h1>Movie Database</h1>
     <h4>Below is a list of all movies that have been entered in the database up until this moment</h4>
 
+<search>
+<form>
+    <input name="Movie name" id="Movie name" placeholder="Search Movies">
+</form>
+  <br>
+</search>
+    <input type="submit"><br>
+    <br>
+
 <!-- Below we make the design of the table:
     100% means that it covers the entire screen
     Padding 2px is the space between the cell edges and the cell content
     nth-child(even) means style every other table row element -->
+
 <style>
 table {
   border-collapse: collapse;
