@@ -11,6 +11,11 @@ gid INT PRIMARY KEY AUTO_INCREMENT,
 mgenre VARCHAR(50)
 );
 
+ALTER TABLE genres
+ADD CONSTRAINT fk_genre
+FOREIGN KEY (mgenreid)
+REFERENCES genres(gid);
+
 INSERT INTO `genres`(`gid`, `mgenre`) 
 VALUES ('1','Action/Adventure');
 
