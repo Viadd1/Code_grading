@@ -29,30 +29,48 @@ Servername is the name of the server that the website is run on. Username and pa
 
 #### QUESTION: Line 8: what variable is created here, and why? What do you think is the purpose of line 10-12, why do we need this?
 
+Answer
+
 #### QUESTION: Line 14: What does echo do? What would you call this statement in other programming languages you know?
+
+Answer
 
 #### QUESTION: Line 14: you can see HTML code here. What do you think this echo statement returns?
 
+Answer
+
 #### QUESTION: Line 17: here we are calling our $link variable. Why do you think that is? Here we introduce a new operator: “->”. Why do you think this operator is useful? Here we introduce a new method, query. What do you think this method does, and which parameter do we use?
+
+Answer
 
 #### QUESTION: On line 19: we observe that num_rows is not coloured yellow like our methods. At the same time, it is not a variable either, since it does not start with $. We call this a property access. What are we accessing, and from where?
 
+Answer
+
 #### QUESTION: Line 19 - 25: a conditional loop is introduced. Can you guess what the output is of this code? Under which conditions?
+
+Answer
 
 ## Index.php
 
 #### QUESTION: Can you guess what the purpose is of this file? Hint: Think about your IMS. If the user is on the index page, where would they be?
 
+Answer
+
 ## Insert_data.html
 
 #### QUESTION: What do you think a form is in HTML?
 
-#### QUESTION: Take note of the post method, we will see it come back in the next file
+    Take note of the post method, we will see it come back in the next file
+
+Answer
 
 ## Insertdata.php
     New concept: In PHP, variables that start with $ are superglobals. Superglobals are special built-in arrays that PHP automatically creates and fills with data about the request, the server, the environment, etc.
 
 #### QUESTION: Line 16-21. What do you think the $_POST superglobal does?
+
+Answer
 
 #### QUESTION: Line 23: here we prepare a SQL query. Why do you think the values are left blank for now? (?,?,?)
 
@@ -60,6 +78,12 @@ Servername is the name of the server that the website is run on. Username and pa
 
     This method takes two parameters: a type definition string: s = string, i = integer, d = double/float, b = blob (binary data). And PHP variables to bind the placeholder values to.
 
+Answer
+
 #### QUESTION: Line 27: Even though we have $_POST[‘id’] data, we do not enter this into our database! Why is that? Think about our first file, create_table.sql
 
+Answer
+
 #### QUESTION: Line 36: Close db connection. This is the first time we see this. Why does it occur here?
+
+Answer
