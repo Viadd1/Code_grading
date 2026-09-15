@@ -2,7 +2,7 @@
 <html>
 <body>
     <h1>Movie Database</h1>
-    <h4>Below is a list of all movies that have been entered in the database up until this moment</h4>
+    <h4>Below is a list of all movies that match your search query</h4>
 
 <!-- Below we make the design of the table:
     100% means that it covers the entire screen
@@ -27,13 +27,12 @@ tr:nth-child(even) {
 
 <search>
 <form action="/search.php" method="get">
-    <input name="Movie name" id="Movie name" placeholder="Search Movies">
+    <input name="Movie_name" id="Movie_name" placeholder="Search Movies">
     <input type="submit"><br>
 </form>
   <br>
 </search>
-    
-    <br>
+<br>
 <!-- Below we create the table:
     echo the table with each heading
     we select all in the database under movies
@@ -46,8 +45,8 @@ include 'db.php';
 
 echo '<table><tr><th>ID</th><th>Movie name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
 
-
-$sql = "SELECT * FROM `movies`";
+$search_query = $_GET["Movie_name"];
+$sql = "SELECT * FROM movies WHERE mname LIKE '$search_query'";
 $result = $link->query($sql);
 
 if ($result->num_rows > 0) {
