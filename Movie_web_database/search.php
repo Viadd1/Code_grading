@@ -69,4 +69,5 @@ include 'closeDB.php';
 ?>
 
 <body>
-    <h4>This is the end of the list! Add more movies at index.php!</h4>
+    <h4>This is the end of the list! Add more movies at <a href="index.php">the homepage</a> or view <a href="showmovies.php">all movies!</a></h4>
+</body>
