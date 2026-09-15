@@ -46,7 +46,7 @@ include 'db.php';
 echo '<table><tr><th>ID</th><th>Movie name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
 
 $search_query = $_GET["Movie_name"];
-$sql = "SELECT * FROM movies WHERE mname LIKE '$search_query'";
+$sql = "SELECT * FROM movies WHERE mname LIKE '%$search_query%'";
 $result = $link->query($sql);
 
 if ($result->num_rows > 0) {
