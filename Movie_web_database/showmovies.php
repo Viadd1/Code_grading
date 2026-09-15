@@ -64,6 +64,8 @@ if ($result->num_rows > 0) {
 }
 
 echo '</table>';
+
+include 'closeDB.php';
 ?>
 
 <body>
