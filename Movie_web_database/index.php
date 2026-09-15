@@ -12,10 +12,10 @@
         <br>
         <label for="genre">Movie genre:</label><br>
         <select name="genre" id="genre">
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <option value="adventure">Adventure</option>
-            <option value="fantasy">Fantasy/SciFi</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Action/Adventure">Action/Adventure</option>
+            <option value="Fantasy/Sci-Fi">Fantasy/SciFi</option>
         </select><br>
         <br>
         <label for="rating">Rating:</label><br>
