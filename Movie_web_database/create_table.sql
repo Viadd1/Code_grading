@@ -11,7 +11,7 @@ gid INT PRIMARY KEY AUTO_INCREMENT,
 mgenre VARCHAR(50)
 );
 
-ALTER TABLE genres
+ALTER TABLE movies
 ADD CONSTRAINT fk_genre
 FOREIGN KEY (mgenreid)
 REFERENCES genres(gid);
