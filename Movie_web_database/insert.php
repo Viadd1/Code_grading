@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 include 'db.php';
 
@@ -36,3 +37,8 @@ if ($result) {
 
 include 'closeDB.php';
 ?>
+
+<html>
+    <br><br>
+    <a href="/index.php">Add another movie review</a>
+</html>
