@@ -26,7 +26,7 @@ tr:nth-child(even) {
 </style>
 
 <search>
-<form action="/search.php" method="get">
+<form action="/showmovies.php" method="get">
     <input name="Movie name" id="Movie name" placeholder="Search Movies">
     <input type="submit"><br>
 </form>
@@ -36,7 +36,7 @@ tr:nth-child(even) {
     <br>
 <!-- Below we create the table:
     echo the table with each heading
-    we select all in the database under movies
+    we select movies from the database
     then we echo what exists in the database in the table created -->
 
     
@@ -46,8 +46,20 @@ include 'db.php';
 
 echo '<table><tr><th>ID</th><th>Movie name</th><th>Year of release</th><th>Genre ID</th><th>Rating</th></tr>';
 
+/* 
+Check if the user has entered something in the search bar
+If they have, select all movies in the database that match the search query
+If they haven't, select all movies in the database (default)
+*/
 
-$sql = "SELECT * FROM `movies`";
+if ($_GET["Movie_name"]) {
+    $search_query = $_GET["Movie_name"];
+    $sql = "SELECT * FROM movies WHERE mname LIKE '%$search_query%'";
+} else {
+    $sql = "SELECT * FROM movies";
+}
+
+//Run query on the database
 $result = $link->query($sql);
 
 if ($result->num_rows > 0) {

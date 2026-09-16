@@ -23,6 +23,6 @@
         <br>
         <input type="submit"><br>
         <br>
-        <h4>The entry will be sent to the movie database and can be viewed at showmovies.php!</h4>
+        <h4>The entry will be sent to the movie database and can be viewed <a href=/showmovies.php>here</a>!</h4>
     
 </html>
